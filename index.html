@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariem Aithssine | Computer Science Student</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-code-slash me-2"></i>Mariem Aithssine
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home" data-page="home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#social" data-page="social">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience" data-page="experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education" data-page="education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills" data-page="skills">Skills</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <div id="home" class="page active">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <!-- TEXT ON HOME PAGE -->
+                <div class="col-lg-6">
+                    <div class="typing-container">
+                        <h1 class="typing-text">Mariem Aithssine</h1>
+                        <span class="cursor"></span>
+                    </div>
+                    <div class="university-badge">
+                        <i class="bi bi-mortarboard-fill me-2"></i>Cadi Ayyad University, Marrakech
+                    </div>
+                    <p class="lead mb-4">
+                        Second-year Computer Science student with a growing passion for web development and software engineering. 
+                        Currently developing a strong foundation in programming, algorithms, and modern development practices, 
+                        with a focus on writing clean, efficient, and maintainable code. Continuously exploring new tools, frameworks,
+                        and technologies to broaden technical skills and improve problem solving abilities. Driven by the goal of contributing
+                        to meaningful software projects and gaining real-world development experience.
+                    </p>
+                    <div class="mt-5">
+                        <a href="#social" class="btn-primary-custom me-3 mb-3" data-page="social">
+                            <i class="bi bi-chat-left-text me-2"></i>Contact Me
+                        </a>
+                        <a href="#experience" class="btn-outline-custom mb-3" data-page="experience">
+                            <i class="bi bi-folder2-open me-2"></i>View Projects
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- IMAGE ON HOME PAGE -->
+                <div class="col-lg-6 text-center mt-5 mt-lg-0">
+                    <img src="./img/me.JPG" alt="Mariem Aithssine" class="profile-img mb-4">
+                    <div class="d-flex justify-content-center gap-2 flex-wrap">
+                        <span class="badge" style="background: var(--gradient); padding: 0.6rem 1.2rem; font-size: 0.9rem;">
+                            <i class="bi bi-code me-1"></i>Web Development
+                        </span>
+                        <span class="badge" style="background: var(--gradient-light); padding: 0.6rem 1.2rem; font-size: 0.9rem;">
+                            <i class="bi bi-cpu me-1"></i>Algorithms
+                        </span>
+                        <span class="badge" style="background: var(--gradient); padding: 0.6rem 1.2rem; font-size: 0.9rem;">
+                            <i class="bi bi-database me-1"></i>Data Structures
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Page -->
+    <div id="social" class="page">
+        <div class="container py-5">
+            <h2 class="section-title"><i class="bi bi-person-lines-fill me-3"></i>Contact & Social</h2>
+            
+            <div class="row">
+                <div class="col-lg-5 mb-4">
+                    <div class="card-custom">
+                        <h3 class="card-title mb-4"><i class="bi bi-info-circle me-2"></i>Contact Information</h3>
+                        <p class="text-muted mb-4">Click on any item to copy to clipboard</p>
+                        
+                        <!-- Phone -->
+                        <div class="contact-item" data-copy="+212618083195" data-type="Phone Number">
+                            <div class="contact-icon phone">
+                                <i class="bi bi-telephone-fill"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Phone</h5>
+                                <p class="mb-0">+212 6 18 08 31 95</p>
+                                <small class="text-muted copy-hint">Click to copy</small>
+                            </div>
+                        </div>
+                        
+                        <!-- Email -->
+                        <div class="contact-item" data-copy="m.aithssine0972@uca.ac.ma" data-type="Email">
+                            <div class="contact-icon email">
+                                <i class="bi bi-envelope-fill"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Email</h5>
+                                <p class="mb-0">m.aithssine0972@uca.ac.ma</p>
+                                <small class="text-muted copy-hint">Click to copy</small>
+                            </div>
+                        </div>
+                        
+                        <!-- Location -->
+                        <div class="contact-item" data-copy="Marrakech, Morocco" data-type="Location">
+                            <div class="contact-icon location">
+                                <i class="bi bi-geo-alt-fill"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Location</h5>
+                                <p class="mb-0">Marrakech, Morocco</p>
+                                <small class="text-muted copy-hint">Click to copy</small>
+                            </div>
+                        </div>
+                        
+                        <!-- Availability -->
+                        <div class="contact-item">
+                            <div class="contact-icon calendar">
+                                <i class="bi bi-calendar-check-fill"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Availability</h5>
+                                <p class="mb-0">Open for internships & collaborations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-7">
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="social-card">
+                                <div class="social-icon">
+                                    <i class="bi bi-github"></i>
+                                </div>
+                                <h4 class="mb-3">GitHub</h4>
+                                <p class="mb-4">Check out my coding projects, contributions, and open-source work.</p>
+                                <a href="https://github.com/arit3ch" target="_blank" class="btn-primary-custom">
+                                    Visit Profile <i class="bi bi-arrow-right ms-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 mb-4">
+                            <div class="social-card">
+                                <div class="social-icon">
+                                    <i class="bi bi-linkedin"></i>
+                                </div>
+                                <h4 class="mb-3">LinkedIn</h4>
+                                <p class="mb-4">Connect with me professionally and view my career journey.</p>
+                                <a href="www.linkedin.com/in/aithssinemariem" target="_blank" class="btn-primary-custom">
+                                    Connect <i class="bi bi-arrow-right ms-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Experience Page -->
+    <div id="experience" class="page">
+        <div class="container py-5">
+            <h2 class="section-title"><i class="bi bi-briefcase-fill me-3"></i>Experience & Projects</h2>
+            
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card-custom">
+                        <h3 class="card-title mb-4"><i class="bi bi-file-code-fill me-2"></i>Academic Projects</h3>
+                        
+                        <div class="mb-4">
+                            <h5 class="mb-3">University Assignment Pages</h5>
+                            <p class="mb-3">Built various HTML pages for course work including forms, tables, and structured content. Designed a recipe collection page with lists, images, and organized content sections.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <span class="skill-tag">HTML</span>
+                                <span class="skill-tag">CSS</span>
+                                <span class="skill-tag">Web Development</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h5 class="mb-3">Interactive Resume Website</h5>
+                            <p class="mb-3">Designed and developed a responsive portfolio website with interactive elements, animations, and smooth page transitions.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <span class="skill-tag">HTML5</span>
+                                <span class="skill-tag">CSS3</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">Bootstrap</span>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h5 class="mb-3">Algorithm Visualizer</h5>
+                            <p class="mb-3">Built a web application to visualize sorting and searching algorithms with step-by-step execution and customizable speed controls.</p>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="skill-tag">Algorithms</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">Canvas API</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-md-6 mb-4">
+                    <div class="card-custom">
+                        <h3 class="card-title"><i class="bi bi-people-fill me-2"></i>Team Leadership</h3>
+                        <p class="mb-3">Led multiple academic team projects from conception to completion, developing strong collaboration and project management skills.</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="skill-tag">Team Coordination</span>
+                            <span class="skill-tag">Project Planning</span>
+                            <span class="skill-tag">Communication</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="card-custom">
+                        <h3 class="card-title"><i class="bi bi-clock-fill me-2"></i>Time Management</h3>
+                        <p class="mb-3">Successfully balanced academic coursework with personal projects while meeting all deadlines, demonstrating excellent organizational skills.</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="skill-tag">Prioritization</span>
+                            <span class="skill-tag">Deadline Management</span>
+                            <span class="skill-tag">Task Organization</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Education Page -->
+    <div id="education" class="page">
+        <div class="container py-5">
+            <h2 class="section-title"><i class="bi bi-mortarboard-fill me-3"></i>Education & Courses</h2>
+            
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <div class="education-card">
+                        <h3 class="card-title mb-3">Bachelor of "Ingénierie des Systèmes d'Information"</h3>
+                        <div class="badge mb-3 graduation-badge">
+                            <i class="bi bi-calendar me-1"></i>Expected Graduation: 2027
+                        </div>
+                        <h5 class="university-name mb-3">Cadi Ayyad University, Faculty of Sciences Semlalia (FSSM)</h5>
+                        <p class="mb-4">Currently in second year, focusing on web development and programming fundamentals. Building a strong foundation in computer science principles and software engineering.</p>
+                        
+                        <h5 class="mb-3">Current Semester Focus:</h5>
+                        <div class="d-flex flex-wrap gap-2 mb-4">
+                            <span class="course-badge">Web Programming</span>
+                            <span class="course-badge">Data Structures</span>
+                            <span class="course-badge">Algorithms</span>
+                            <span class="course-badge">C Programming</span>
+                            <span class="course-badge">Operating Systems</span>
+                            <span class="course-badge">UML Modeling</span>
+                            <span class="course-badge">Digital Electronics</span>
+                            <span class="course-badge">Signal Processing</span>
+                            <span class="course-badge">Operational Research</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class="mb-4">University Curriculum</h3>
+            
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card-custom h-100">
+                        <h4 class="card-title"><i class="bi bi-calculator me-2"></i>Mathematics & Fundamentals</h4>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="course-badge">Calculus</span>
+                            <span class="course-badge">Algebra</span>
+                            <span class="course-badge">Probability & Statistics</span>
+                            <span class="course-badge">Signal Processing</span>
+                            <span class="course-badge">Operational Research</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card-custom h-100">
+                        <h4 class="card-title"><i class="bi bi-code-slash me-2"></i>Programming & Development</h4>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="course-badge">C Programming</span>
+                            <span class="course-badge">Data Structures</span>
+                            <span class="course-badge">Algorithms</span>
+                            <span class="course-badge">Web Programming</span>
+                            <span class="course-badge">HTML/CSS/JS</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card-custom h-100">
+                        <h4 class="card-title"><i class="bi bi-cpu me-2"></i>Computer Science Core</h4>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="course-badge">Operating Systems</span>
+                            <span class="course-badge">Digital Electronics</span>
+                            <span class="course-badge">UML Modeling</span>
+                            <span class="course-badge">System Analysis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card-custom">
+                        <h4 class="card-title"><i class="bi bi-lightbulb-fill me-2"></i>What I'm Learning & Future Goals</h4>
+                        
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <h5 class="mb-3">Currently Learning:</h5>
+                                <ul>
+                                    <li>CSS styling: Learning to style HTML with CSS, flexbox and grid layouts</li>
+                                    <li>JavaScript basics: Starting JavaScript fundamentals and DOM manipulation</li>
+                                    <li>Bootstrap Framework: Exploring Bootstrap for responsive design and components</li>
+                                    <li>PHP basics: Beginning back-end development</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <h5 class="mb-3">Future Goals:</h5>
+                                <ul>
+                                    <li>Master responsive web design principles</li>
+                                    <li>Learn React.js framework for modern web applications</li>
+                                    <li>Build full-stack projects with databases</li>
+                                    <li>Contribute to open-source projects on GitHub</li>
+                                    <li>Master C programming and data structures</li>
+                                    <li>Learn advanced algorithms and system design</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Page -->
+    <div id="skills" class="page">
+        <div class="container py-5">
+            <h2 class="section-title"><i class="bi bi-tools me-3"></i>Skills & Competencies</h2>
+            
+            <div class="row mb-5">
+                <div class="col-lg-6">
+                    <div class="card-custom mb-4">
+                        <h3 class="card-title mb-4"><i class="bi bi-code-slash me-2"></i>Technical Skills</h3>
+                        
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>C Programming</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>HTML5 / CSS3</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>JavaScript</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Data Structures</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Algorithms</span>
+                                <span>78%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="78"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="card-custom mb-4">
+                        <h3 class="card-title mb-4"><i class="bi bi-people me-2"></i>Professional Skills</h3>
+                        
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Team Management</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Time Management</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Problem Solving</span>
+                                <span>82%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="82"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Communication</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Adaptability</span>
+                                <span>83%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="83"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card-custom">
+                        <h3 class="card-title mb-4"><i class="bi bi-globe me-2"></i>HTML & Web Development Skills</h3>
+                        
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <h5 class="mb-3">HTML Skills</h5>
+                                <ul class="mb-0">
+                                    <li>HTML basics: Tags, elements, attributes, and document structure</li>
+                                    <li>Text formatting: Headings, paragraphs, lists, and text styling</li>
+                                    <li>Links and Images: Hyperlinks, image embedding, and navigation</li>
+                                    <li>Forms and Tables: Creating forms, input fields, and data tables</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="col-md-6 mb-4">
+                                <h5 class="mb-3">Computer Science Skills</h5>
+                                <ul class="mb-0">
+                                    <li>C Programming: Variables, loops, functions, pointers, file handling</li>
+                                    <li>Data Structures: Arrays, linked lists, stacks, queues, trees</li>
+                                    <li>Algorithms: Sorting, searching, complexity analysis</li>
+                                    <li>Operating Systems: Process management, memory management</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card-custom h-100">
+                        <h4 class="card-title"><i class="bi bi-translate me-2"></i>Languages</h4>
+                        <div class="text-center mt-4">
+                            <div class="mb-3">
+                                <div class="language-icon">عربي</div>
+                                <h5>Arabic</h5>
+                                <p class="language-level">Native Language</p>
+                            </div>
+                            <div class="mb-3">
+                                <div class="language-icon">EN</div>
+                                <h5>English</h5>
+                                <p class="language-level">C1 Level (Advanced)</p>
+                            </div>
+                            <div>
+                                <div class="language-icon">FR</div>
+                                <h5>French</h5>
+                                <p class="language-level">B2 Level (Upper Intermediate)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card-custom h-100">
+                        <h4 class="card-title"><i class="bi bi-tools me-2"></i>Tools & Technologies</h4>
+                        <div class="d-flex flex-wrap gap-2 mt-3">
+                            <span class="skill-tag"><i class="bi bi-git me-1"></i>Git & GitHub</span>
+                            <span class="skill-tag"><i class="bi bi-terminal me-1"></i>VS Code</span>
+                            <span class="skill-tag"><i class="bi bi-window me-1"></i>Windows/Linux/MacOS</span>
+                            <span class="skill-tag"><i class="bi bi-file-earmark-code me-1"></i>Dev Tools</span>
+                            <span class="skill-tag"><i class="bi bi-hdd me-1"></i>File Systems</span>
+                            <span class="skill-tag"><i class="bi bi-lightning me-1"></i>Digital Circuits</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card-custom h-100">
+                        <h4 class="card-title"><i class="bi bi-book me-2"></i>Additional Skills</h4>
+                        <div class="d-flex flex-wrap gap-2 mt-3">
+                            <span class="skill-tag">Problem Solving</span>
+                            <span class="skill-tag">Logical Thinking</span>
+                            <span class="skill-tag">Analytical Skills</span>
+                            <span class="skill-tag">Attention to Detail</span>
+                            <span class="skill-tag">Fast Learning</span>
+                            <span class="skill-tag">Research Skills</span>
+                            <span class="skill-tag">Documentation</span>
+                            <span class="skill-tag">Debugging</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h4 class="mb-3 footer-name">Mariem Aithssine</h4>
+                    <p class="mb-2">Computer Science Student | Cadi Ayyad University</p>
+                    <p class="footer-description">Passionate about technology, programming, and innovation</p>
+                </div>
+                <div class="col-md-6 text-md-end mt-3 mt-md-0">
+                    <div class="social-icons">
+                        <a href="https://github.com/mariem-aithssine" target="_blank" title="GitHub">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/mariem-aithssine" target="_blank" title="LinkedIn">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="mailto:m.aithssine0972@uca.ac.ma" title="Email">
+                            <i class="bi bi-envelope-fill"></i>
+                        </a>
+                        <a href="tel:+212618083195" title="Phone">
+                            <i class="bi bi-telephone-fill"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p class="copyright">
+                        &copy; 2024 Mariem Aithssine. All rights reserved. | Cadi Ayyad University - FSSM
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
