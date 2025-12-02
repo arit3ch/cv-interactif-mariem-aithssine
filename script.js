@@ -1,4 +1,4 @@
-// Page Navigation
+// Page navigation
 const navLinks = document.querySelectorAll('.nav-link');
 const pages = document.querySelectorAll('.page');
 
